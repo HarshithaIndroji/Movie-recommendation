@@ -8,4 +8,7 @@ Common methods include tokenization, stemming, create TfidfVectorizer enabling t
 We are now ready to implement these concepts. First we’ll import some libraries such as Pandas to manipulate our data, scikit-learn to create our pipeline and train our model and NLTK for natural language for the tokenizer, stopwords and stemming.
 
 
-The CSV file is loaded into a Pandas DataFrame. The movies dataset have two columns for plot: wiki_plot and imdb_plot. We’ll concatenate they both into a new column called plot so we can have a single column with more information which have the same meaning. In that way, the size of the vocabulary is reduced making it easier for the model to train on a limited dataset. Computers can’t process anything but numbers. In order to realize any operations with text, we need first to transform the text to numbers. This process is called vectorization, and as the name suggests, they are organized in vectors. There’s multiple ways of vectorizing text. Here we’ll be using Bag of Words and TF-IDF.
+The CSV file is loaded into a Pandas DataFrame. The movies dataset have two columns for plot: wiki_plot and imdb_plot. We’ll concatenate they both into a new column called plot so we can have a single column with more information which have the same meaning. In that way, the size of the vocabulary is reduced making it easier for the model to train on a limited dataset. 
+
+
+Computers can’t process anything but numbers. In order to realize any operations with text, we need first to transform the text to numbers. This process is called vectorization, and as the name suggests, they are organized in vectors. There’s multiple ways of vectorizing text. Here we’ll be using Bag of Words and TF-IDF.
