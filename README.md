@@ -12,3 +12,15 @@ The CSV file is loaded into a Pandas DataFrame. The movies dataset have two colu
 
 
 Computers can’t process anything but numbers. In order to realize any operations with text, we need first to transform the text to numbers. This process is called vectorization, and as the name suggests, they are organized in vectors. There’s multiple ways of vectorizing text. Here we’ll be using Bag of Words and TF-IDF.
+
+
+Bag of Words (BoW): Each sentence is represented as a vector with a fixed size equal to the number of words in the vocabulary with each position representing one specific word. The value of this positions is the number of occurences of that specific word in the sentence.
+
+
+Term Frequency-Inverse Document Frequency(TF-IDF): When we need to compare the similarity between two documents, it’s helpful to assign a measure of importance for each word in the documents, so we can focus on specific parts. 
+
+
+Product of two terms: The TF term tells the frequency of the word in the document, while the IDF term is about how rarely are documents with that specific word. The basic idea is: If the word appears a lot in very few documents, it must be important. If it appears a lot in many documents, it must not be important(“the”, “of”, “a”, for example). 
+
+
+So in this way we can use all these techniques and implement the clustering and when it divides into clusters based on the similarity and we can retrieve the movies based on the nearest clusters.
